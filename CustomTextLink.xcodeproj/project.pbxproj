@@ -16,6 +16,7 @@
 		F93CAFE72637ACC400C893BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93CAFE52637ACC400C893BB /* Main.storyboard */; };
 		F93CAFE92637ACC500C893BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93CAFE82637ACC500C893BB /* Assets.xcassets */; };
 		F93CAFEC2637ACC500C893BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93CAFEA2637ACC500C893BB /* LaunchScreen.storyboard */; };
+		F93CAFF52637AFD400C893BB /* CustomTextLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93CAFF42637AFD400C893BB /* CustomTextLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		F93CAFE82637ACC500C893BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F93CAFEB2637ACC500C893BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F93CAFED2637ACC500C893BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93CAFF42637AFD400C893BB /* CustomTextLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F93CAFC02637ACAB00C893BB /* CustomTextLink.h */,
 				F93CAFC12637ACAB00C893BB /* Info.plist */,
+				F93CAFF42637AFD400C893BB /* CustomTextLink.swift */,
 			);
 			path = CustomTextLink;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					F93CAFBC2637ACAB00C893BB = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					F93CAFC52637ACAB00C893BB = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93CAFF52637AFD400C893BB /* CustomTextLink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		F93CAFD22637ACAC00C893BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2U4AT4HXWG;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Photon.CustomTextLink;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		F93CAFD32637ACAC00C893BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2U4AT4HXWG;
@@ -486,6 +494,7 @@
 		F93CAFD52637ACAC00C893BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U4AT4HXWG;
 				INFOPLIST_FILE = CustomTextLinkTests/Info.plist;
@@ -504,6 +513,7 @@
 		F93CAFD62637ACAC00C893BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U4AT4HXWG;
 				INFOPLIST_FILE = CustomTextLinkTests/Info.plist;
