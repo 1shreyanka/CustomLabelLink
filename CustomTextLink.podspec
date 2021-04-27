@@ -78,7 +78,6 @@ Pod::Spec.new do |spec|
   #
 
    spec.source       = { :git => "https://github.com/1shreyanka/CustomLabelLink.git", :tag => "0.0.1" }
-   spec.source_files  = 'Classes/*.{h,m}'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -88,7 +87,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "CustomTextLink", "CustomTextLink/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
